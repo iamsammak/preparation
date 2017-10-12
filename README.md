@@ -2,6 +2,7 @@ Here we go!
 
 Below are words of advice from this [reddit post:](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 
+
 Almost all of the questions posted in this sub are some form of "what do I have to know/do to pass a tech interview/get a job." Here's some distilled advice I can offer from having conducted over 1000 tech interviews. This doesn't cover everything, but I think it covers the most important foundational elements.
 Setting expectations: If this is your first time looking for a job, or you haven't had to interview in a number of years, expect to invest some effort in preparing for the interview. It's usually the industry professionals that completely ignore this step, but some college students do as well. You're essentially studying for a test, don't slack off - it's going to be work. All of those things that you've been telling yourself don't matter (maybe you're a bit fuzzy on how exactly the internet works - do you really know what happens after you hit enter on the URL bar?) that you don't know - now it's time to address those gaps head on. So, what matter.
 For the sake of space, I'm going to focus on what a fresh grad needs to do to prepare and that's more consistent across companies (and it's a shorter list).
