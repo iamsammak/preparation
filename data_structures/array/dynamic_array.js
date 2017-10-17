@@ -15,6 +15,27 @@ class DynamicArray {
     this.store[index] = value;
   }
 
+  pop() {
+    lastItem = this.store[length - 1]
+    this.store[length - 1] = null;
+    this.length -= 1;
+
+    lastItem;
+  }
+
+  push(value) {
+    if (this.length == this.capacity) {
+      this.resize();
+    }
+
+    this.length += 1;
+    this.store[length - 1] = value;
+
+    this.store;
+  }
+
+
+
   checkIndex(index) {
 
   }
