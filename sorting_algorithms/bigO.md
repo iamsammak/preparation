@@ -1,0 +1,5 @@
+(You mentioned a few details about quicksort, heapsort, and mergesort that I wanted to touch on before wrapping up this answer. While you're right that quicksort has a degenerate O(n2) worst case, there are many ways to avoid this. The introsort algorithm keeps track of the recursion depth and switches the algorithm to heapsort if it looks like the quicksort will degenerate. This guarantees O(n log n) worst-case behavior with low memory overhead and maximizes the amount of benefit you get from quicksort. Randomized quicksort, while still having an O(n2) worst case, has a vanishingly small probability of actually hitting that worst case.
+
+Heapsort is a good algorithm in practice, but isn't as fast as the other algorithms in some cases because it doesn't have good locality of reference. That said, the fact that it never degenerates and needs only O(1) auxiliary space is a huge selling point.
+
+Mergesort does need a lot of auxiliary memory, which is one reason why you might not want to use it if you have a huge amount of data to sort. It's worth knowing about, though, since its variants are widely used.)

@@ -1,7 +1,7 @@
 class BinaryMinHeap {
   constructor() {
     this.store = [];
-    this.comparison = function(a,b){return a-b}
+    this.comparison = function(a,b){return a-b};
   }
 
   count() {
@@ -67,7 +67,21 @@ class BinaryMinHeap {
       childrenValues.push(array[rightChildIdx]);
     }
 
-    // not complete
+    if (childrenValues.every((childValue) => {return parentValue < childValue }) {
+      return array;
+    }
 
+    let swapIdx = null;
+    if (childrenValues.length == 1) {
+      swapIdx = leftChildIdx;
+    } else {
+      swapIdx = childrenValues.indexOf(Math.min(childrenValues[0], childrenValues[1]));
+    }
+
+    let temp = array[parentIdx];
+    array[parentIdx] = array[swapIdx];
+    array[swapIdx] = temp;
+
+    this.heapifyDown(array, swapIdx, length);
   }
 }
