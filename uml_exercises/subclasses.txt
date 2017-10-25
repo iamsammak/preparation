@@ -1,0 +1,33 @@
+http://www.tomjewett.com/dbdesign/dbdesign.php?page=subclass.php
+
+Top down design
+
+Specialization constraints
+- rather than the usual cardinality/multiplicity symbols, the subclass
+association line is labeled with specialization constraints
+
+Two dimensions
+  incomplete vs complete
+  disjoint vs overlapping
+
+
+In an INCOMPLETE specialization, also called partial specialization,
+only some individuals of the parent class are specialized (that is, have unique attributes)
+Other individuals of the parent class have only the common attributes
+Ex. Dorm Student --- Housing RA
+(I'm thinking more top down)
+
+In an COMPLETE specialization, all individuals of the parent class
+have one or more unique attributes that are not common to the
+generalized (parent) class
+(I'm thinking more bottom up)
+ex. Lot and citylot/countylot
+
+In a DISJOINT specialization, also called an exclusive specialization,
+an individual of the parent class may be a member of
+only one specialized subclass
+Ex. GradStudent --- TeachingAsst and ResearchAsst
+  You can't be a TA and a RA
+
+In an OVERLAPPING specialization, an individual of the parent class
+may be a member of more than one of the specialized subclasses

@@ -1,0 +1,43 @@
+https://www.lucidchart.com/pages/uml/sequence-diagram
+
+Packets of information that are transmitted between objects. They may reflect the start and execution of an operation, or the sending and reception of a signal.
+
+UML Synchronous Message Symbol
+Synchronous Message Symbol
+
+    Represented by a solid line with a solid arrowhead. This symbol is used when a sender must wait for a response to a message before it continues. The diagram should show both the call and the reply.
+
+UML Asynchronous Message Symbol
+Asynchronus Message Symbol
+
+    Represented by a solid line with a lined arrowhead. Asynchronous messages are those that don't require a response before the sender continues. Only the call should be included in the diagram.
+
+UML Return Message Symbol
+Asynchronus Return Message Symbol
+
+    Represented by a dashed line with a lined arrowhead.
+
+UML Create Message Symbol
+Asynchronus Create Message Symbol
+
+    Represented by a dashed line with a lined arrowhead. These messages are sent to lifelines in order to create themselves.
+
+UML Reply Message Symbol
+Reply Message Symbol
+
+    Represented by a dashed line with a lined arrowhead, these messages are replies to calls.
+
+UML Delete Message Symbol
+Delete Message Symbol
+
+    Represented by a solid line with a solid arrowhead, followed by an X symbol. This messages indicates the destruction of an object and is placed in its path on the lifeline.
+
+
+Component Diagram
+ - https://www.lucidchart.com/pages/uml/component-diagram
+
+Deployment Diagram
+ - https://www.lucidchart.com/pages/uml/deployment-diagram
+
+Use Case Diagram
+ - https://www.lucidchart.com/pages/uml/use-case-diagram

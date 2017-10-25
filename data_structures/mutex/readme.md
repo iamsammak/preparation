@@ -1,6 +1,6 @@
 [Workday - Ruby Concurrency: IN Praise of Condition Variables](https://workday.github.io/ruby/2017/08/14/ruby-concurrency-in-praise-of-condition-variables)
 
-A mutex is a data structure for protecting shared state between multiple threads. When a piece of code is wrapped inside a mutex, the mutex guarantees that only one thread at a time can execute this code. If another thread wants to start executing this code, it'll have to wait until our first thread is done with it. I realize this may all sound a bit abstract, so now is probably a good time ot bring in some example code.
+A mutex is a data structure for protecting shared state between multiple threads. When a piece of code is wrapped inside a mutex, the mutex guarantees that only one thread at a time can execute this code. If another thread wants to start executing this code, it'll have to wait until our first thread is done with it. I realize this may all sound a bit abstract, so now is probably a good time to bring in some example code.
 
 
 ### Writing to shared state

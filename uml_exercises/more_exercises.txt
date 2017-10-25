@@ -1,0 +1,51 @@
+http://www.cs.unibo.it/cianca/wwwpages/ids/esempi/uml-s.pdf
+
+Try to read the UML class diagram
+  pay attention to the multiplicity
+  try to understand the relationship and describe it in natural langauge
+
+Veterinary System
+  Pet - has 1 - petowner
+  PetOwner - has 1 to many - pet
+
+Computer System
+  CPU - has 0 to many - controllers
+  controllers - has exactly 1 - CPU
+  Controller has a subclass of SCSIController (specialized controller)
+  SCSIController - has 1 to 4 - DiskDrives
+  DiskDrive - has exactly 1 - SCSIController
+
+Library System
+  Shelf - has 1 to many - Books
+  Book - has 1 to many - Pages
+  Patron and Shelf (depended on) Books  ?
+
+Banking System
+  Bank - had 0 to many - Accounts
+  Account - has exactly one - Bank
+
+  Accounts have an audit method that doesn't return anything
+  Account has thre specialized subclasses
+    - Checking, Savings, MoneyMarket
+
+Home Heating System
+  Thermostat is dependent on Room
+  Thermostat - has 1 - Room
+  Heater is dependent on Thermostat
+  Thermostat - has 0 to many - Heaters
+  Heater - has 1 - Thermostat
+  AubeTH101D is a specialized kind of Thermostat
+  ElectricHeater is a specialized kind of Heater
+
+
+Company
+  Employee works for 1 company
+  Company has 0 to many employees
+  Admin Assistant has 1 to many Supervisors
+  Manager has 0 to many Admin Assistant
+  Company has 1 Board of Directors
+  Board of Directors has 1 Company
+  Office allocated to 0 to many Employees
+  Employee has 0 to 1 Office
+  Person is a part of 0 to many Board of Directors
+  Board of Directors have 0 People or 3 to 8 Board members

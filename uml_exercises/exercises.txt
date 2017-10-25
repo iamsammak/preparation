@@ -1,0 +1,84 @@
+https://lagunita.stanford.edu/c4x/DB/UML/asset/opt-uml.html
+
+1.
+a.
+  With: 6 authors
+    Min: 3 books
+    Max: 18 books
+    Min: 0 readers
+    Max: 72 readers (18 books * 4 readers per book)
+b.
+  With: 6 readers
+    Min: 2 books
+    Max: Unlimited, a book is a book even if it doesn't have a reader
+    Min: 1 author
+    Max: Unlimited
+
+2.
+  HS Student        [1]               [0..1]  Crush
+  - Name {unique}   ------has crush--------   - Duration
+  - Grade
+
+  | Student |-----------has crush ----
+  | name pk | 0..*                    |    | crush Info |
+  | grade   |                         |--- | length     |
+  |         |-----------crush on -----
+              0..1
+
+3.
+  Class: Book
+  Subclass: Anthology, Fiction, Children, Nonfiction
+
+  complete (all books are Fiction or Nonfiction)
+  overlapping (i.e. a Children Fiction book)
+
+4.
+  True (a. e. f.)
+  False (b. c. d. g. h. i.)
+
+  * - means (0..*) zero to many
+
+5.
+  a. min and max total num of instructors for a given course
+    Min: 1 instructor (professor)
+    Max: 5 (3 professors, 2 assistants)
+  b. min and max teaching load (num of courses)
+    for professors:
+      min: 0 course
+      max: 1 course
+    for assistants:
+      min: 3 courses
+      max: 6 courses
+  c.
+    map UML diagram into a relational schema
+    Professor
+      name
+      office
+      rank
+      course num
+      rating
+    Assistant
+      name
+      office
+      years
+    Course
+      course number
+      deptartment
+    ATeach
+      name
+      course number
+  d.
+    specify a minimal key for each relation in your solution to part c
+    Professor
+      name
+    Assistant
+      name
+    Course
+      course number
+    ATeach
+      name
+      course num
+  e.
+    professor course num must have null
+      - professor doesn't have to teach a course
+    professor rating must permit nulls
