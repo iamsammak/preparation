@@ -6,14 +6,14 @@
 // if you want to use this for non base 10, then just input base value
 
 function reverseInt(num, base = 10) {
-  let rev = 0;
+  let ret = 0;
 
   while (num != 0) {
-    rev = (rev * base) + (num % base);
+    ret = (ret * base) + (num % base);
     num = Math.floor(num / base);
   }
 
-  return rev;
+  return ret;
 }
 
 console.log("reverse of 1223 =", reverseInt(1223));

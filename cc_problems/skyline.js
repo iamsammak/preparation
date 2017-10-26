@@ -80,3 +80,23 @@ console.log(max);
 // add that as a keypoint
 // if its a increase in height, log [x, height]
 // but if its a decrease in height, log [x - 1, height]
+
+// O(nlogn) Solution
+// one uses Max Priority Queue (heap)
+// another uses Merge Sort (Divide and Conquer)
+
+function formSkyline() {
+
+}
+
+function mergeSkyline(left, right) {
+  
+}
+
+function skyline(input) {
+  const middle = Math.floor(input.length / 2);
+  let left = skyline(input.slice(0, middle));
+  let right = skyline(input.slice(middle));
+
+  return mergeSkyline(left, right);
+}
